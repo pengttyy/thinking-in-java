@@ -28,7 +28,7 @@ public class CommandQueueTest {
 	
 	@Test
 	public void testString() {
-		String str = "pengkai";
+		String str = "chenkai";
 	    str = str.concat("kai");
 	    System.out.println(str);
 	}
