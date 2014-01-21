@@ -1,11 +1,11 @@
-package com.pengttyy.pattern.java_pattern.creational.factoryMethod;
+package com.pengttyy.pattern.java_pattern.creational.simpleFactoryMethod;
 
-public class StirFriedMeatAndPotatoes implements Snack{
+public class LotusRootFriedMeat implements Snack{
 	
 	private String name;
 	
-	public StirFriedMeatAndPotatoes(){
-		   this.name = "土豆炒肉";
+	public LotusRootFriedMeat(){
+		   this.name = "莲藕炒肉";
 	       System.out.println(name+"快餐初始化！");		
 		}
 		

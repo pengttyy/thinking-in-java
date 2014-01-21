@@ -1,4 +1,4 @@
-package com.pengttyy.pattern.java_pattern.creational.factoryMethod;
+package com.pengttyy.pattern.java_pattern.creational.simpleFactoryMethod;
 /**
  * 快餐
  * @author Kai Peng

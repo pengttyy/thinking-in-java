@@ -1,9 +1,12 @@
-package com.pengttyy.pattern.java_pattern.creational.factoryMethod;
+package com.pengttyy.pattern.java_pattern.creational.simpleFactoryMethod;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import com.pengttyy.pattern.java_pattern.creational.simpleFactoryMethod.Noshery;
+import com.pengttyy.pattern.java_pattern.creational.simpleFactoryMethod.SimpleNosheryFactory;
 
 public class NosheryTest {
     
