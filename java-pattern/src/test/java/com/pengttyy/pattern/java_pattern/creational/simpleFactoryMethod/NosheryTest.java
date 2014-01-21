@@ -1,7 +1,5 @@
 package com.pengttyy.pattern.java_pattern.creational.simpleFactoryMethod;
 
-import static org.junit.Assert.*;
-
 import org.junit.Before;
 import org.junit.Test;
 
