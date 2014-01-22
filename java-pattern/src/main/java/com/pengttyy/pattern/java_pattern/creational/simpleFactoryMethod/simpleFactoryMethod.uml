@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="simpleFactoryMethod">
+  <packagedElement xmi:type="uml:Package" xmi:id="_nw6bcYNvEeOFIaRh608oCQ" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_nw6bcoNvEeOFIaRh608oCQ" name="pengttyy">
+      <packagedElement xmi:type="uml:Package" xmi:id="_nw6bc4NvEeOFIaRh608oCQ" name="pattern">
+        <packagedElement xmi:type="uml:Package" xmi:id="_nw7CgINvEeOFIaRh608oCQ" name="java_pattern">
+          <packagedElement xmi:type="uml:Package" xmi:id="_nw7CgYNvEeOFIaRh608oCQ" name="creational">
+            <packagedElement xmi:type="uml:Package" xmi:id="_nw7CgoNvEeOFIaRh608oCQ" name="simpleFactoryMethod">
+              <packagedElement xmi:type="uml:Class" xmi:id="_nw7pkINvEeOFIaRh608oCQ" name="StirFriedMeatAndPotatoes" clientDependency="_nxx-IINvEeOFIaRh608oCQ">
+                <ownedAttribute xmi:id="_ny7NoINvEeOFIaRh608oCQ" name="name" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:id="_nxx-IINvEeOFIaRh608oCQ" name="Snack" supplier="_nw-s4INvEeOFIaRh608oCQ" client="_nw7pkINvEeOFIaRh608oCQ" contract="_nw-s4INvEeOFIaRh608oCQ"/>
+                <ownedOperation xmi:id="_ny70sINvEeOFIaRh608oCQ" name="cutFood" visibility="public"/>
+                <ownedOperation xmi:id="_ny9C0INvEeOFIaRh608oCQ" name="cookRice" visibility="public"/>
+                <ownedOperation xmi:id="_ny9p4INvEeOFIaRh608oCQ" name="cooking" visibility="public"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_nw8QoINvEeOFIaRh608oCQ" name="LotusRootFriedMeat" clientDependency="_ny-Q8INvEeOFIaRh608oCQ">
+                <ownedAttribute xmi:id="_ny-4AINvEeOFIaRh608oCQ" name="name" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:id="_ny-Q8INvEeOFIaRh608oCQ" name="Snack" supplier="_nw-s4INvEeOFIaRh608oCQ" client="_nw8QoINvEeOFIaRh608oCQ" contract="_nw-s4INvEeOFIaRh608oCQ"/>
+                <ownedOperation xmi:id="_nzAGIINvEeOFIaRh608oCQ" name="cutFood" visibility="public"/>
+                <ownedOperation xmi:id="_nzAtMINvEeOFIaRh608oCQ" name="cookRice" visibility="public"/>
+                <ownedOperation xmi:id="_nzBUQINvEeOFIaRh608oCQ" name="cooking" visibility="public"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_nw9ewINvEeOFIaRh608oCQ" name="Noshery">
+                <ownedAttribute xmi:id="_nzCiYINvEeOFIaRh608oCQ" name="factory" visibility="private" type="_nw_7AINvEeOFIaRh608oCQ" association="_nz4P4INvEeOFIaRh608oCQ"/>
+                <ownedOperation xmi:id="_nzDJcINvEeOFIaRh608oCQ" name="orderNoshery" visibility="public">
+                  <ownedParameter xmi:id="_nzDJcYNvEeOFIaRh608oCQ" name="type">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_nw-s4INvEeOFIaRh608oCQ" name="Snack">
+                <ownedComment xmi:id="_nw_T8INvEeOFIaRh608oCQ">
+                  <body>/** 
+ * 快餐
+ * @author Kai Peng
+ */
+</body>
+                </ownedComment>
+                <ownedOperation xmi:id="_nzDwgINvEeOFIaRh608oCQ" name="cutFood" visibility="public"/>
+                <ownedOperation xmi:id="_nzEXkINvEeOFIaRh608oCQ" name="cookRice" visibility="public"/>
+                <ownedOperation xmi:id="_nzEXkYNvEeOFIaRh608oCQ" name="cooking" visibility="public"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_nw_7AINvEeOFIaRh608oCQ" name="SimpleNosheryFactory">
+                <ownedOperation xmi:id="_nzEXkoNvEeOFIaRh608oCQ" name="create" visibility="public">
+                  <ownedParameter xmi:id="_nzEXk4NvEeOFIaRh608oCQ" name="type">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_nzEXlINvEeOFIaRh608oCQ" name="return" type="_nw-s4INvEeOFIaRh608oCQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_nz4P4INvEeOFIaRh608oCQ" memberEnd="_nzCiYINvEeOFIaRh608oCQ _nz4P4YNvEeOFIaRh608oCQ">
+                <ownedEnd xmi:id="_nz4P4YNvEeOFIaRh608oCQ" name="Noshery" type="_nw9ewINvEeOFIaRh608oCQ" association="_nz4P4INvEeOFIaRh608oCQ"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_s5zycINwEeOFIaRh608oCQ" name="A_&lt;simpleNosheryFactory>_&lt;stirFriedMeatAndPotatoes>" memberEnd="_s5zycYNwEeOFIaRh608oCQ _s5zydINwEeOFIaRh608oCQ" navigableOwnedEnd="_s5zydINwEeOFIaRh608oCQ">
+                <ownedEnd xmi:id="_s5zycYNwEeOFIaRh608oCQ" name="simpleNosheryFactory" type="_nw_7AINvEeOFIaRh608oCQ" association="_s5zycINwEeOFIaRh608oCQ">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s5zycoNwEeOFIaRh608oCQ" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s5zyc4NwEeOFIaRh608oCQ" value="1"/>
+                </ownedEnd>
+                <ownedEnd xmi:id="_s5zydINwEeOFIaRh608oCQ" name="stirFriedMeatAndPotatoes" type="_nw7pkINvEeOFIaRh608oCQ" association="_s5zycINwEeOFIaRh608oCQ">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s5zydYNwEeOFIaRh608oCQ" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s5zydoNwEeOFIaRh608oCQ" value="1"/>
+                </ownedEnd>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_9jTUQINwEeOFIaRh608oCQ" name="A_&lt;simpleNosheryFactory>_&lt;lotusRootFriedMeat>" memberEnd="_9jTUQYNwEeOFIaRh608oCQ _9jTURINwEeOFIaRh608oCQ" navigableOwnedEnd="_9jTURINwEeOFIaRh608oCQ">
+                <ownedEnd xmi:id="_9jTUQYNwEeOFIaRh608oCQ" name="simpleNosheryFactory" type="_nw_7AINvEeOFIaRh608oCQ" association="_9jTUQINwEeOFIaRh608oCQ">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9jTUQoNwEeOFIaRh608oCQ" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9jTUQ4NwEeOFIaRh608oCQ" value="1"/>
+                </ownedEnd>
+                <ownedEnd xmi:id="_9jTURINwEeOFIaRh608oCQ" name="lotusRootFriedMeat" type="_nw8QoINvEeOFIaRh608oCQ" association="_9jTUQINwEeOFIaRh608oCQ">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9jTURYNwEeOFIaRh608oCQ" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9jTURoNwEeOFIaRh608oCQ" value="1"/>
+                </ownedEnd>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
