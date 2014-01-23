@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="abstractFactory">
+  <packagedElement xmi:type="uml:Package" xmi:id="_5mOCUIQuEeO2NODkkyXv5A" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_5mOpYIQuEeO2NODkkyXv5A" name="pengttyy">
+      <packagedElement xmi:type="uml:Package" xmi:id="_5mOpYYQuEeO2NODkkyXv5A" name="pattern">
+        <packagedElement xmi:type="uml:Package" xmi:id="_5mOpYoQuEeO2NODkkyXv5A" name="java_pattern">
+          <packagedElement xmi:type="uml:Package" xmi:id="_5mOpY4QuEeO2NODkkyXv5A" name="creational">
+            <packagedElement xmi:type="uml:Package" xmi:id="_5mPQcIQuEeO2NODkkyXv5A" name="abstractFactory">
+              <packagedElement xmi:type="uml:Class" xmi:id="_5mPQcYQuEeO2NODkkyXv5A" name="KFCRice" clientDependency="_5nYf8IQuEeO2NODkkyXv5A">
+                <interfaceRealization xmi:id="_5nYf8IQuEeO2NODkkyXv5A" name="Rice" supplier="_5mS60YQuEeO2NODkkyXv5A" client="_5mPQcYQuEeO2NODkkyXv5A" contract="_5mS60YQuEeO2NODkkyXv5A"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_5mRFoIQuEeO2NODkkyXv5A" name="Parts"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_5mRssIQuEeO2NODkkyXv5A" name="KFCParts" clientDependency="_5nYf8YQuEeO2NODkkyXv5A">
+                <interfaceRealization xmi:id="_5nYf8YQuEeO2NODkkyXv5A" name="Parts" supplier="_5mRFoIQuEeO2NODkkyXv5A" client="_5mRssIQuEeO2NODkkyXv5A" contract="_5mRFoIQuEeO2NODkkyXv5A"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_5mRssYQuEeO2NODkkyXv5A" name="KFCNoshery">
+                <generalization xmi:id="_5nZHAIQuEeO2NODkkyXv5A" general="_5mUI8IQuEeO2NODkkyXv5A"/>
+                <ownedOperation xmi:id="_5oR30IQuEeO2NODkkyXv5A" name="createNoshery" visibility="protected">
+                  <ownedParameter xmi:id="_5oR30YQuEeO2NODkkyXv5A" name="type">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_5oR30oQuEeO2NODkkyXv5A" name="return" type="_5mSTwIQuEeO2NODkkyXv5A" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_5mSTwIQuEeO2NODkkyXv5A" name="Snack" isAbstract="true">
+                <ownedComment xmi:id="_5mS60IQuEeO2NODkkyXv5A">
+                  <body>/** 
+ * 快餐
+ * @author Kai Peng
+ */
+</body>
+                </ownedComment>
+                <ownedAttribute xmi:id="_5oTF8IQuEeO2NODkkyXv5A" name="rice" visibility="protected" type="_5mS60YQuEeO2NODkkyXv5A" association="_5pQvQIQuEeO2NODkkyXv5A"/>
+                <ownedAttribute xmi:id="_5oUUEIQuEeO2NODkkyXv5A" name="parts" visibility="protected" type="_5mRFoIQuEeO2NODkkyXv5A" association="_5pQvQoQuEeO2NODkkyXv5A"/>
+                <ownedOperation xmi:id="_5oU7IIQuEeO2NODkkyXv5A" name="prepare" visibility="public"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_5mS60YQuEeO2NODkkyXv5A" name="Rice"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_5mTh4IQuEeO2NODkkyXv5A" name="KFCStirFriedMeatAndPotatoes">
+                <generalization xmi:id="_5oViMIQuEeO2NODkkyXv5A" general="_5mSTwIQuEeO2NODkkyXv5A"/>
+                <ownedAttribute xmi:id="_5oViMYQuEeO2NODkkyXv5A" name="iMaterialFactory" visibility="package" type="_5mUwAIQuEeO2NODkkyXv5A" association="_5pRWUIQuEeO2NODkkyXv5A"/>
+                <ownedOperation xmi:id="_5oWJQIQuEeO2NODkkyXv5A" name="prepare" visibility="public"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_5mUI8IQuEeO2NODkkyXv5A" name="Noshery" isAbstract="true">
+                <ownedOperation xmi:id="_5oWwUIQuEeO2NODkkyXv5A" name="createNoshery" visibility="protected" isAbstract="true">
+                  <ownedParameter xmi:id="_5oWwUYQuEeO2NODkkyXv5A" name="type">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_5oWwUoQuEeO2NODkkyXv5A" name="return" type="_5mSTwIQuEeO2NODkkyXv5A" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_5oXXYIQuEeO2NODkkyXv5A" name="orderNoshery" visibility="public">
+                  <ownedParameter xmi:id="_5oXXYYQuEeO2NODkkyXv5A" name="type">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_5mUI8YQuEeO2NODkkyXv5A" name="KFCLotusRootFriedMeat">
+                <generalization xmi:id="_5oX-cIQuEeO2NODkkyXv5A" general="_5mSTwIQuEeO2NODkkyXv5A"/>
+                <ownedAttribute xmi:id="_5oYlgIQuEeO2NODkkyXv5A" name="iMaterialFactory" visibility="package" type="_5mUwAIQuEeO2NODkkyXv5A" association="_5pRWUoQuEeO2NODkkyXv5A"/>
+                <ownedOperation xmi:id="_5oZMkIQuEeO2NODkkyXv5A" name="prepare" visibility="public"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_5mUwAIQuEeO2NODkkyXv5A" name="IMaterialFactory">
+                <ownedOperation xmi:id="_5oZzoIQuEeO2NODkkyXv5A" name="createRice" visibility="public">
+                  <ownedParameter xmi:id="_5oZzoYQuEeO2NODkkyXv5A" name="return" type="_5mS60YQuEeO2NODkkyXv5A" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_5oZzooQuEeO2NODkkyXv5A" name="createParts" visibility="public">
+                  <ownedParameter xmi:id="_5oZzo4QuEeO2NODkkyXv5A" name="return" type="_5mRFoIQuEeO2NODkkyXv5A" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_5mVXEIQuEeO2NODkkyXv5A" name="KFCFactory" clientDependency="_5oaasIQuEeO2NODkkyXv5A">
+                <interfaceRealization xmi:id="_5oaasIQuEeO2NODkkyXv5A" name="IMaterialFactory" supplier="_5mUwAIQuEeO2NODkkyXv5A" client="_5mVXEIQuEeO2NODkkyXv5A" contract="_5mUwAIQuEeO2NODkkyXv5A"/>
+                <ownedOperation xmi:id="_5oaasYQuEeO2NODkkyXv5A" name="createRice" visibility="public">
+                  <ownedParameter xmi:id="_5oaasoQuEeO2NODkkyXv5A" name="return" type="_5mS60YQuEeO2NODkkyXv5A" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_5obBwIQuEeO2NODkkyXv5A" name="createParts" visibility="public">
+                  <ownedParameter xmi:id="_5obBwYQuEeO2NODkkyXv5A" name="return" type="_5mRFoIQuEeO2NODkkyXv5A" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_5pQvQIQuEeO2NODkkyXv5A" memberEnd="_5oTF8IQuEeO2NODkkyXv5A _5pQvQYQuEeO2NODkkyXv5A">
+                <ownedEnd xmi:id="_5pQvQYQuEeO2NODkkyXv5A" name="Snack" type="_5mSTwIQuEeO2NODkkyXv5A" association="_5pQvQIQuEeO2NODkkyXv5A"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_5pQvQoQuEeO2NODkkyXv5A" memberEnd="_5oUUEIQuEeO2NODkkyXv5A _5pQvQ4QuEeO2NODkkyXv5A">
+                <ownedEnd xmi:id="_5pQvQ4QuEeO2NODkkyXv5A" name="Snack" type="_5mSTwIQuEeO2NODkkyXv5A" association="_5pQvQoQuEeO2NODkkyXv5A"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_5pRWUIQuEeO2NODkkyXv5A" memberEnd="_5oViMYQuEeO2NODkkyXv5A _5pRWUYQuEeO2NODkkyXv5A">
+                <ownedEnd xmi:id="_5pRWUYQuEeO2NODkkyXv5A" name="KFCStirFriedMeatAndPotatoes" type="_5mTh4IQuEeO2NODkkyXv5A" association="_5pRWUIQuEeO2NODkkyXv5A"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_5pRWUoQuEeO2NODkkyXv5A" memberEnd="_5oYlgIQuEeO2NODkkyXv5A _5pRWU4QuEeO2NODkkyXv5A">
+                <ownedEnd xmi:id="_5pRWU4QuEeO2NODkkyXv5A" name="KFCLotusRootFriedMeat" type="_5mUI8YQuEeO2NODkkyXv5A" association="_5pRWUoQuEeO2NODkkyXv5A"/>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
