@@ -9,6 +9,13 @@ public  abstract class Snack {
    protected Rice rice;
    protected Parts parts;
 
-   public void prepare(){};	
+   public abstract void prepare();
+   
+   public abstract void cut();
+   
+   public abstract void cook();
+   
+   
+   
 	
 }

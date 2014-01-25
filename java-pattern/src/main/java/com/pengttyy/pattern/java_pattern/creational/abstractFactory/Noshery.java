@@ -7,6 +7,8 @@ public abstract class Noshery {
 	public void orderNoshery(String type){
 		Snack snack = createNoshery(type);
 		snack.prepare();
+		snack.cut();
+		snack.cut();
 	}
 	
 }
