@@ -5,9 +5,9 @@ public class KFCLotusRootFriedMeat implements Snack{
 	private String name;
 	
 	public KFCLotusRootFriedMeat(){
-		   this.name = "kfc莲藕炒肉";
-	       System.out.println(name+"快餐初始化！");		
-		}
+		this.name = "kfc莲藕炒肉";
+	    System.out.println(name+"快餐初始化！");		
+	}
 		
 		public void cutFood(){
 			System.out.println(name+"快餐切菜!");

@@ -1,0 +1,9 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd">
+    ${prop:greeting}
+    
+    <t:pagelink page="literal:Another">Another</t:pagelink>
+    <br></br>
+    
+    <t:actionlink t:id="actionLink1">Another(ActionLink)</t:actionlink>
+    
+</html>  
